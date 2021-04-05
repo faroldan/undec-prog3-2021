@@ -37,17 +37,10 @@ public class GestorVuelo {
             return false;
         }
 
-       /* public boolean ModificarVuelo(Vuelo mod, String CodVuelo, Date salida, Date arribo, String cp) throws
+        public boolean ModificarVuelo() throws
         VuelosException {
-            for (Vuelo v: vuelos){
-                if (v.getCodVuelo()== mod.getCodVuelo()){
 
-
-                    return true;
-                }
-            }
-            return false;
-        }*/
+        }
 
 
     }
