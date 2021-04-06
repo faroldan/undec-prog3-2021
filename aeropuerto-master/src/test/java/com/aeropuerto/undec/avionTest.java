@@ -34,8 +34,8 @@ public class avionTest {
 
         GestorAvion ga = GestorAvion.getInstance();
         Avion a = new Avion("LV-FNL", "Boeing 737",120, 2010);
-        ga.AgregarAvion(a);
-        assertTrue(true );
+
+        assertEquals(true, ga.AgregarAvion(a)); // completar
     }
     @Test
     public void modificarAvion() throws AvionException {

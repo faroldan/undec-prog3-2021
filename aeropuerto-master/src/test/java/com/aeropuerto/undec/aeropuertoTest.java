@@ -27,8 +27,7 @@ public class aeropuertoTest {
 
         GestorAeropuerto ga = GestorAeropuerto.getInstance();
         Aeropuerto a = new Aeropuerto("EZE", "Ezeiza","Buenos Aires", "1802");
-        ga.AgregarAeropuerto(a);
-        assertTrue(true );
+        assertEquals(true, ga.AgregarAeropuerto(a)); // completar
     }
 
     @Test

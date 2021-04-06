@@ -37,8 +37,8 @@ public class aerolineaTest {
                 GestorAerolinea ga = GestorAerolinea.getInstance();
                 Date fecha =sdf.parse("1980-01-20");
                 Aerolinea a = new Aerolinea("30-43728472-3", "AR","Austral",fecha);
-                ga.AgregarAerolinea(a);
-                assertTrue(true );
+
+                assertEquals(true,ga.AgregarAerolinea(a) ); // completar
 
         }
 

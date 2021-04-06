@@ -37,8 +37,8 @@ public class pilotoTest {
 
         GestorPiloto gp = GestorPiloto.getInstance();
         Piloto a = new Piloto(0, "23-45678394-5", "Boun","Voyage", fecha);
-        gp.AgregarPiloto(a);
-        assertTrue(true );
+
+        assertEquals(true,gp.AgregarPiloto(a) );
     }
     @Test
     public void modificarPiloto() throws PilotoException, ParseException {
