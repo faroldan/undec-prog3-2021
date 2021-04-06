@@ -36,13 +36,17 @@ public class GestorVuelo {
             }
             return false;
         }
+    }
+        public boolean ModificarVuelo(Vuelo data) throws VuelosException {
 
-        public boolean ModificarVuelo() throws
-        VuelosException {
-
+            for (Vuelo v : vuelos){
+                if(v.getCodVuelo().equals(data.getCodVuelo())) {}
+                else{throw new VuelosException("No se encontró el vuelo buscado");}
+            }
+            return true;
         }
 
 
     }
 
-}
+
